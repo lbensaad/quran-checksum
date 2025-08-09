@@ -60,8 +60,6 @@ For a text predating computers by 1400 years to demonstrate these principles sug
 
 ## The Challenge
 
-The paper presents much more: prime number patterns, letter frequency distributions following mathematical keys, and concatenation properties with probabilities approaching zero. 
-
 Whether you're a believer or skeptic, the mathematical structure is undeniable and worth investigating. The full patterns would be impressive even for modern human let alone a text from the medieval period.
 
 **For the curious**: The complete mathematical analysis reveals patterns involving the number 7, "public keys" based on letter frequencies, and geometric relationships.
