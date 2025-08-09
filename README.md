@@ -1,6 +1,6 @@
-# Ancient Digital Checksum: Mathematical Structure in the Quran
+# Digital Checksum in Ancient Text
 
-**TL;DR: A 1400-year-old text appears to implement the same error-detection principles we use in modern computing—without requiring any extra space for the checksum data.**
+**A 1400-year-old text appears to implement the same error-detection principles we use in modern computing—without requiring any extra space for the checksum data.**
 
 ## The Challenge
 
@@ -14,22 +14,27 @@ Sounds impossible? Meet the Quran.
 
 ## The Structure
 
-The Quran consists of 114 chapters, each containing a variable number of verses (total: 6,236 verses). What's remarkable is how this seemingly random structure creates a self-verifying mathematical pattern.
+The Quran consists of 114 chapters, each containing a variable number of verses, for example, chapter 1 has 7 verse, chapter 2 has 286 verses, chapter 3 has 200 verse. The total number verses in all the book is **6,236 verses**. What's remarkable is how this seemingly **random structure creates a self-verifying mathematical pattern**.
 
 ## The Checksum Algorithm
 
-Consider each chapter as a pair `(c, v)` where `c` is the chapter number and `v` is its verse count. Now partition all 114 chapters into two sets:
+Consider `Q` the set of all chapters, each chapter as a pair `(c, v)` where `c` is the chapter number and `v` is its verse count. We have `|Q| = 114`, notice that for `Q`:
 
-- **Set A**: Chapters where `(c + v) % 2 == 0` (both even or both odd)  
-- **Set B**: Chapters where `(c + v) % 2 == 1` (mixed parity)
+- &sum;`v` = 6236 for all chapters in Q (which is the total verses in the entire book, 7+286+200+...+5=6236)
+- &sum; `c` =6555 for all chapters in Q (which is the sum of all chapter numbers 1+2+...+114=6555)
+
+Now partition all 114 chapters into two sets:
+
+- **Set A**: Chapters where `(c + v) % 2 == 0` (even parity: both c and v are even or both are odd)  
+- **Set B**: Chapters where `(c + v) % 2 == 1` (odd parity: one of the is even the other is odd)
 
 ### The Results Are Statistically Impossible
 
 1. **Perfect Balance**: `|A| = |B| = 57` chapters each
 2. **Verse count VS chapter number**: The sum of all verses in A equals the sum of all chapter numbers in B
 3. **The Kicker**: 
-   - Sum of `(c + v)` for all chapters in A = 6,236 (which is the total verses in the entire book)
-   - Sum of `(c + v)` for all chapters in B = 6,555 (which is the sum of all chapter numbers 1+2+...+114=6,555)
+   - In subset A, &sum; `(c + v)= 6236`  (this is a the ckecksum for the total verses in the entire book)
+   - In subset B, &sum; `(c + v)= 6555`  (this is the checksum for total chapter numbers in the entire book)
 
 ## Why This Matters
 
@@ -64,6 +69,6 @@ Whether you're a believer or skeptic, the mathematical structure is undeniable a
 *What's your take? Coincidence, ancient mathematical genius, or something else entirely?*
 
 ## Data
-To verify it yourself, here are verse counts for each chapter: 7 for chapter 1, 286 for chapter 2, 200 for chapter 3 etc.:
+To verify it, using Excel or other tools, here are verse counts for each chapter: 7 for chapter 1, 286 for chapter 2, 200 for chapter 3 etc.:
 
 7, 286, 200, 176, 120, 165, 206, 75, 129, 109, 123, 111, 43, 52, 99, 128, 111, 110, 98, 135, 112, 78, 118, 64, 77, 227, 93, 88, 69, 60, 34, 30, 73, 54, 45, 83, 182, 88, 75, 85, 54, 53, 89, 59, 37, 35, 38, 29, 18, 45, 60, 49, 62, 55, 78, 96, 29, 22, 24, 13, 14, 11, 11, 18, 12, 12, 30, 52, 52, 44, 28, 28, 20, 56, 40, 31, 50, 40, 46, 42, 29, 19, 36, 25, 22, 17, 19, 26, 30, 20, 15, 21, 11, 8, 8, 19, 5, 8, 8, 11, 11, 8, 3, 9, 5, 4, 7, 3, 6, 3, 5, 4, 5, 6
