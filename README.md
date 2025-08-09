@@ -30,11 +30,11 @@ Now partition all 114 chapters into two sets:
 
 ### The Results Are Statistically Impossible
 
-1. **Perfect Balance**: `|A| = |B| = 57` chapters each
+1. **Perfect Balance**: `|A| = |B| = 57` chapters each, eventhough verse counts for eatch chapter seems random
 2. **Verse count VS chapter number**: The sum of all verses in A equals the sum of all chapter numbers in B
 3. **The Kicker**: 
-   - In subset A, &sum; `(c + v)= 6236`  (this is a the ckecksum for the total verses in the entire book)
-   - In subset B, &sum; `(c + v)= 6555`  (this is the checksum for total chapter numbers in the entire book)
+   - In subset `A`, &sum; `(c + v)= 6236` = &sum;`v` in `Q` (this is a the ckecksum for the total verses in the entire book)
+   - In subset `B`, &sum; `(c + v)= 6555` = &sum; `c` in `Q` (this is the checksum for total chapter numbers in the entire book)
 
 ## Why This Matters
 
