@@ -1,4 +1,4 @@
-# Digital Checksum in Ancient Text
+# 1400 Years Old Digital Checksum for Humans to Consider
 
 **A 1400-year-old text appears to implement the same error-detection principles we use in modern computing—without requiring any extra space for the checksum data.**
 
